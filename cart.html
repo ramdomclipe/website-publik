@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang Belanja</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Keranjang Belanja</h1>
+    <div class="products">
+      
+      <div class="product">
+        <img src="shirt.jpg" alt="kaos oblong">
+        <h2>Kaos Oblong</h2>
+        <p>Rp 35.000,00</p>
+        <button class="add-to-cart" data-name="kaos oblong" data-price="35.000">Tambah ke keranjang</button>
+      </div>
+      
+      <div class="product">
+        <img src="t-shirt.jpg" alt="kemeja">
+        <h2>Kemeja</h2>
+        <p>Rp 75.000,00</p>
+        <button class="add-to-cart" data-name="kemeja" data-price="75.000">Tambah ke keranjang</button>
+      </div>
+      
+      <div class="product">
+        <img src="trousers.jpg" alt="celana rumah">
+        <h2>Celana Rumah</h2>
+        <p>Rp 25.000,00</p>
+        <button class="add-to-cart" data-name="celana rumah" data-price="25.000">Tambah ke keranjang</button>
+      </div>
+       
+       <div class="product">
+        <img src="jeans.jpg" alt="celana jean">
+        <h2>Celana Jean</h2>
+        <p>Rp 65.000,00</p>
+        <button class="add-to-cart" data-name="celana jean" data-price="65.000">Tambah ke keranjang</button>
+      </div>
+      
+       <div class="product">
+        <img src="suit.jpg" alt="setelan jas">
+        <h2>Setelan Jas</h2>
+        <p>Rp 150.000,00</p>
+        <button class="add-to-cart" data-name="setelan jas" data-price="150.000">Tambah ke keranjang</button>
+      </div>
+    </div>
+
+    <h2>Keranjangmu</h2>
+    <div class="cart" id="cart">
+    
+    </div>
+
+    <div class="checkout">
+      <h3>Total: <span id="total-price">0</span></h3>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <div id="checkout-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Checkout</h2>
+      <p>Total to Pay: <span id="final-total"></span></p>
+      <label for="customer-name">Name:</label>
+      <input type="text" id="customer-name" placeholder="Your Name">
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" placeholder="Your Email">
+      <button id="pay-btn">Order Now</button>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
